@@ -4,6 +4,6 @@ import com.example.upswingtest.data.model.User
 import kotlinx.coroutines.flow.Flow
 
 interface IDataRepository {
-    suspend fun saveData(name: String, email:String)
+    suspend fun saveData(user: User)
     suspend fun getData(): Flow<User>
 }

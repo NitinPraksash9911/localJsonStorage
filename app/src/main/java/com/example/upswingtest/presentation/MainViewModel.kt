@@ -38,11 +38,10 @@ class MainViewModel @Inject constructor(private val dataRepository: IDataReposit
         _email = email
     }
 
-    override fun onCleared() {
+    fun saveData() {
         viewModelScope.launch(Dispatchers.IO) {
-            dataRepository.saveData(_name, _email)
+            dataRepository.saveData(User(_name, _email))
         }
-        super.onCleared()
     }
 
 }

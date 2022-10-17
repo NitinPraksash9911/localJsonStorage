@@ -1,4 +1,4 @@
-package com.example.upswingtest.data
+package com.example.upswingtest
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
